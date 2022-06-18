@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Best Guess The Number Game on internet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  
+    <title>Guess The Number - The Game</title>
+</head>
+<body>
+    <nav>
+<div class="flex navb">
+    <div class="left">
+        <img src="images/game_logo.png" alt="">
+    </div>
+    <div class="middle">
+        <ul class="flex">
+            <li>Home</li>
+            <li>More Games</li>
+            <li>Suggestions</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="btn">Sign In</button>
+        <!-- <button class="btn">Register</button> -->
+    </div>
+</div>
+    </nav>
+    <main>
+        <h1>Guess The Number Between 1 to 10</h1>
+<div class="game">
+    <label for="num">Enter Your Guess:</label>
+    <input id="num" type="number" name="num">
+</div>
+<h2 id="result">Your Result Will be displayed here.</h2>
+<div class="btn-container">
+
+    <input class="btn" type="submit" onclick="checkNum()">
+    <input class="btn" type="button" value="Reload" onclick="reset()">
+</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
